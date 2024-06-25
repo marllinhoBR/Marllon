@@ -1,0 +1,272 @@
+/* estilo geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+      
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.flex{
+  display: flex;
+}
+
+.interface{
+    max-width: auto;
+    margin: 0 auto;
+}
+
+/* estilo do cabeçalho*/
+
+header{
+    padding:  40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-size: 20px;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px;
+
+}
+
+header .btn-contato button{
+   padding: 10px 40px;
+   font-size: 18px; 
+  font-weight: 600;
+  background-color: rgb(0, 110, 255);
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+header .logo img{
+    max-width:300px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
+header a:hover{
+  color: #fff;
+  transform: scale(1.08);
+
+}
+
+header .btn-contato button:hover{
+  box-shadow: 0px 0px 14px #0093f5;
+}
+
+/*topo do site*/
+
+section.topo-do-site{
+   padding: 0px 4%;
+}
+
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site h1{
+  color: #fff;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+  color: #0093f5;
+  font-size: 50px;
+}
+
+.topo-do-site .txt-topo-site p{
+  color:#fff;
+  margin: 40px 0;
+  font-size: 20px;
+}
+
+.topo-do-site .img-topo-site img{
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes flutuar{
+ 0%{
+     top: 0;
+ }
+ 100%{
+       top: 30px;
+
+ }
+
+
+}
+
+/* estilo do sobre */
+
+section.Sobre{
+   padding: 50px 4%;
+}
+
+section.Sobre .flex{
+  align-items: center;
+  gap: 60px; 
+}
+
+.Sobre .txt-sobre{
+  color: #fff;
+}
+
+.Sobre .txt-sobre h2{
+font-size: 50px;
+color: #0093f5;
+}
+
+.Sobre .txt-sobre h2 span{
+  color: #fff;
+}
+
+.Sobre .txt-sobre p{
+  margin: 10px 0;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.Sobre .txt-sobre .btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: #0093f5;
+  font-size: 22px;
+  cursor: pointer;
+}
